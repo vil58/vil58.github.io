@@ -128,9 +128,9 @@
             const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
             let username = '';
             for (let i = 0; i < length; i++) {
-                username += characters.charAt(Math.floor(Math.random() * characters.length)) + '_';
+                username += characters.charAt(Math.floor(Math.random() * characters.length));
             }
-            return username.slice(0, -1); 
+            return username;
         }
         document.getElementById('newListBtn').addEventListener('click', () => {
             document.getElementById('main').classList.add('hidden');
